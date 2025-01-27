@@ -1,0 +1,1058 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MOMIN366</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="assets/logo/logo.png"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="#" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href=". . tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href=" css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
+    >
+        <header
+            class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
+        >
+            <a class="tw-h-[60px] tw-w-[60px] tw-p-[4px]" href="index.html">
+                <img
+                    src=" assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+              <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="About.html"> About us </a>
+                    <a class="header-links" href="contact.html"> Contact </a>
+                    <a class="header-links" href="Policy.html"> policy </a>
+                </div> 
+                <!-- <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        aria-label="signup"
+                        class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Get started</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div> -->
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-6xl tw-font-semibold tw-uppercase tw-leading-[40px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Unlock your faith </span>
+                        <br />
+                                <span class=""> With MOMIN366 </span>
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                    The essential app for deepening your understanding of the Quran, just as Prophet Muhammad taught, with challenges that are curated to give you cash Rewards and coins
+                    </div>
+                    <div class="pulse-logo-container tw-flex tw-justify-center tw-mt-4">
+                        <svg class="circular-logo" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="#4CC790" stroke-width="5" />
+                        </svg>
+                        <img src=" assets/logo/logo.png" alt="Logo" class="center-logo" />
+                    </div>
+                    
+                    
+                    <div class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4">
+                        <!-- Removed Get started and Learn more buttons -->
+                        <div class="carousel-img tw-h-[90px] tw-w-[90px]">
+                            <img src=" assets/images/brand-logos/playstore.svg" alt="Google" class="tw-h-full tw-w-full tw-object-contain" />
+                        </div>
+                        <!-- <div class="carousel-img tw-h-[90px] tw-w-[90px]">
+                            <img src=" assets/images/brand-logos/apple.svg" alt="Apple" class="tw-h-full tw-w-full tw-object-contain" />
+                        </div> -->
+                    </div>
+                    
+                </div>
+
+                <div
+                    class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                        <img
+                            src=" assets/images/home/2x.png"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        />
+                    </div>
+
+                    <div
+                        class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
+                    ></div>
+                </div>
+            </div>
+        </section>
+<!-- 
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        > -->
+            <!-- <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+                Trusted by brands you know
+            </h2> -->
+
+            <!-- <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-6 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                > -->
+                    <!-- add the brands using your app  -->
+                    <!-- <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/google.svg"
+                            alt="Google"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/microsoft.svg"
+                            alt="Microsoft"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/adobe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/airbnb.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/stripe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src=" assets/images/brand-logos/reddit.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2
+                        class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl"
+                    >
+                        Key Benefits
+                    </h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-rocket-takeoff-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                                Minimize hours spent
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                By only Reading 3 pages per day
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-text-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-layout-sidebar-inset tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                                Simple to use
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                we Designed this keeping you in Mind
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-lightning-charge-fill tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                               In Plus and challenge section
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                we Reward you as per your knowledge and the consistence you show in using the application
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2
+                        class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+                    >
+                        Features loved by everyone
+                    </h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-globe"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Daily Goals
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                               A simplistic modern approach to Recite Namaz and Do zikir in a professional way with step by step explanation
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Namaz Tracker
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Track your Namaz the way you track your health 
+                                This will increase remembrance of allah in your 
+                                consciousness and indeed you will be a practising 
+                                Muslim 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-cloud-fill"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                NAMAZ TIMINGS
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Where Ever you are in the world our Robust Namaz timming  will help you to
+                                identify the Namaz time based on your location we support two school of thought 
+                                Hanfi and shafi 
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-fingerprint"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                RECITE For Rewards
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Enter the competition login with continue with google, Enter the competition 
+                                and win Exciting Rewards and cash prize. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-sliders"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Your Favourite Surah 
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                are now one clik away Recite Yaseen , Surah baqrah , surah Arrahman and more with only one 
+                                click, designed for you to make it very easy to read
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[200px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Community
+                            </h3>
+                            <p class="tw-text-sm tw-text-gray-300">
+                               we all love friends and Family why not 
+                               do good deeds with them and create a deeni 
+                               connection For this world and after world
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div class="tw-flex">
+                    <div
+                        class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]"
+                    >
+                        <img
+                            src=" assets/images/home/dash.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                        Momin366 is Simple to use 
+                    </h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            AI powered Daily Namaz
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        Unlock the power of simplicity with our innovative AI-driven platform! Answering questions with just a "yes" or "no" has never been easier. This intuitive approach not only encourages you to engage in more Namaz but also inspires you to become a better human being and a devoted Muslim. Embrace the future of spiritual growth—let AI guide you on your path to enlightenment!
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Daily Goals
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        Whether you're a newcomer or a seasoned practitioner, our app is designed just for you! Dive into our comprehensive section that highlights the essential elements of Namaz—because every prayer deserves to be complete. Don’t miss out on these crucial insights that will elevate your spiritual experience.
+                        Download the app today and ensure your Namaz is fulfilling and meaningful! Your journey to mastering the essentials starts now!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                        Momin366 Community is what you need!
+                    </h3>
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                          Invite your Friends and Family:
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        Experience the joy of reciting the Quran with friends and family while deepening your understanding of Islam. By inviting just 30 members, you can create your own community and unlock the worldly and spiritual benefits that await you.
+                        Download the app now to start your journey! Gifts and rewards are waiting as you strengthen your faith together. Don’t miss out—your spiritual adventure begins today!
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            30 Members is what you need
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        Invite your friends, family, and colleagues to the Momin366 community and embark on an incredible journey together. Experience the joy of reciting the complete Quran in just one week, with each JUZ bringing you closer to understanding the powerful words of Allah (SWT) in your preferred translation.
+                        Don’t wait—download the app now and be part of this stunning transformation! Your spiritual growth and community await!
+                        
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tw-flex">
+                    <div
+                        class="tw-max-h-[650px] tw-max-w-[850px] tw-overflow-hidden tw-rounded-lg tw-shadow-lg tw-shadow-[rgba(170,49,233,0.44021358543417366)]"
+                    >
+                        <img
+                            src=" assets/images/home/insights.png"
+                            alt="coding"
+                            class="tw-h-full tw-w-full tw-object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        >
+            <h3
+                class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+            >
+                You're in good hands
+            </h3>
+            <!-- Testimonials -->
+            <div
+                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        I think this is one of the best and unique idea with a beautiful execution , i am using this app since it was in beta mode , waiting for new features.
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Yasmeen Sayeed</div>
+                            <div class="tw-text-gray-400">Google, USA</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        One word for this application "Incredibly Great" You have focused on simplicity I am an engineer myself I can say you might have worked very very hard on this application. The design is addictive and so easy even my child who is of 6 years navigate very easily in this application great work
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Ismail</div>
+                            <div class="tw-text-gray-400">Aramco,Saudi Arabia</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        I am personally impressed with this application  i want to see this application break the playstore and appstore 
+                        highest download records. I firmly belive all Muslim must have this application in their mobile phone.
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Emir</div>
+                            <div class="tw-text-gray-400">Kapadokya Creations, Turkey</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Best way to connect with family and friends with MOMIN366 community idea is great never I have never thought that I can be more helpful and useful to my family member this application has increased my importance thank you MOMIN366 your challenges are great I enroll in them in every 2 days.
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/a2.PNG"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold"> SANA Ansari</div>
+                            <div class="tw-text-gray-400">SunPharma, INDIA </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                       Daily Namaz tracker helped me in indentifying which namaz i am missing and i am very thankful because of this now i am praying even the tahajud namaz 
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/a3.PNG"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Sufiyan Shaikh</div>
+                            <div class="tw-text-gray-400">KPMG, INDIA</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                    <p class="tw-mt-4 tw-text-gray-300">
+                       I am not a practising muslim because i dont know lot of things this application has precisely targeted
+                       my pain point and the Daily Goals , Namaz Tracker , Namaz timing is absolutely awesome. i love using this application it feels like i am connected with Almight Allah , now i get less angry and more spirutal thank you MOMIN366
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src=" assets/images/people/a1.png"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Afreen Baig</div>
+                            <div class="tw-text-gray-400">gojek, Indonesia</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-mt-5 tw-flex tw-w-full tw-flex-col tw-place-items-center tw-p-[2%]"
+            id="pricing"
+        >
+            <h3
+                class="tw-text-3xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl"
+            >
+                Simple pricing
+            </h3>
+            <!-- pricing -->
+            <div
+                class="tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+            >
+                <div
+                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl tw-font-semibold">FREE</span>
+                        <!-- <span class="tw-text-2xl tw-text-gray-400">/mo</span> -->
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        The Application has lot of Features that are absolutely Free for EveryOne 
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>Namaz Tracker Effective way of tracking Namaz</li>
+                        <li>DailyGoals.</li>
+                        <li>Innovative Namaz Timing.</li>
+                        <li>Favourite Surah</li>
+                        <li>Translated in your Language QUran</li>
+                        <li>Community</li>
+                    </ul>
+                    <a
+                        href="#"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-w-[380px] tw-flex-col tw-place-items-center tw-gap-2 tw-rounded-lg tw-border-2 tw-border-primary tw-bg-secondary tw-p-8 tw-shadow-xl max-lg:tw-w-[320px]"
+                >
+                    <h3 class="">
+                        <span class="tw-text-5xl tw-font-semibold">$3</span>
+                        <span class="tw-text-2xl tw-text-gray-400">/mo</span>
+                    </h3>
+                    <p class="tw-mt-3 tw-text-center tw-text-gray-300">
+                        with all the features of Free 
+                    </p>
+                    <hr />
+                    <ul
+                        class="tw-mt-4 tw-flex tw-flex-col tw-gap-2 tw-text-center tw-text-lg tw-text-gray-200"
+                    >
+                        <li>how Womens pray Namaz</li>
+                        <li>How Mens pray Namaz</li>
+                          <li>How to do GUSUL and take bath</li>
+                          <li>How to purify yourself</li>
+                          <li>How to Recite Quran</li>
+                          <li>with many more content that is schedule to be on air soon</li>
+                    </ul>
+                    <a
+                        href="#"
+                        class="btn tw-mt-8 !tw-w-full tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.02]"
+                    >
+                        Get now
+                    </a>
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- <section
+            class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%] max-lg:tw-p-3"
+        > -->
+            <!-- <h3
+                class="reveal-up tw-text-center tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+            >
+                Read our articles ✨
+            </h3> -->
+            <!-- articles -->
+            <!-- <div
+                class="reveal-up tw-mt-10 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col"
+            >
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src=" assets/images/home/forest.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
+                            srcset=""
+                        />
+                    </div>
+                    <h3
+                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
+                    >
+                        Article 1
+                    </h3>
+                    <p class="tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src=" assets/images/home/mountain.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
+                            srcset=""
+                        />
+                    </div>
+                    <h3
+                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
+                    >
+                        Article 2
+                    </h3>
+                    <p class="tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+                <a
+                    href=""
+                    class="tw-flex tw-h-[400px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px]"
+                >
+                    <div
+                        class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md"
+                    >
+                        <img
+                            src=" assets/images/home/photography.jpg"
+                            alt="article image"
+                            class="tw-h-full tw-w-full tw-object-cover tw-transition-transform tw-duration-[0.3s] hover:tw-scale-[1.04]"
+                            srcset=""
+                        />
+                    </div>
+                    <h3
+                        class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl"
+                    >
+                        Article 3
+                    </h3>
+                    <p class="tw-text-gray-400">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, explicabo!
+                    </p>
+                    <span>
+                        <span>Learn more</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </span>
+                </a>
+            </div> -->
+        <!-- </section> -->
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+        >
+            <h3
+                class="tw-text-4xl tw-font-medium tw-text-gray-300 max-md:tw-text-2xl"
+            >
+                FAQ
+            </h3>
+            <div
+                class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4"
+            >
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Is the Application Free or Paid?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        The Application is Free to use for everyone only the plus section and the MominGoals section are paid. In MominGoals section you will be rewarded handsomely for your participation
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>If my device is lost and i have taken subscription will it be visible in my new device?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                        If you login with your registered mailId then you can see your subscription 
+                       in addition drop an email at support@momin366.com to get accees faster
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>can i purchase for a complete Year?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                       Absolutely we have an Annual plan where you can buy for the whole year and the discount on it is huge.
+                    </div>
+                </div>
+
+                <div
+                    class="faq tw-w-full tw-rounded-md tw-border-[1px] tw-border-solid tw-border-[#1F2123] tw-bg-[#080808]"
+                >
+                    <div
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>I want to request a new feature?</span>
+                        <i class="bi bi-plus tw-ml-auto tw-font-semibold"></i>
+                    </div>
+                    <div class="content">
+                     We would love to hear from you write to us at support@momin366.com with the feature details and we will implement it based on the top 5 best feature request
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4"
+            >
+                <div class="tw-text-3xl max-md:tw-text-2xl">
+                   Any Suggestions Email us?
+                </div>
+                <a
+                    href="http://"
+                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                >
+                    advice@momin366.com
+                </a>
+            </div>
+        </section>
+
+        <!-- <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%] max-md:tw-px-2"
+        >
+            <div
+                class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+            >
+                <div class="tw-flex tw-flex-col tw-gap-1">
+                    <h2 class="tw-text-3xl tw-text-gray-300 max-md:tw-text-xl">
+                        Join our newsletter
+                    </h2>
+                    <div class="tw-text-gray-300">Lorem ipsum dolor sit.</div>
+                </div>
+
+                <div
+                    class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2"
+                >
+                    <input
+                        type="email"
+                        class="input tw-h-full tw-w-full !tw-border-gray-600 tw-p-2 tw-outline-none"
+                        placeholder="email"
+                    />
+                    <a
+                        class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                        href=""
+                    >
+                        Signup
+                    </a>
+                </div>
+            </div>
+        </section> -->
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        >
+            <div
+                class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+            >
+                <img
+                    src=" assets/logo/logo.png"
+                    alt="logo"
+                    srcset=""
+                    class="tw-max-w-[120px]"
+                />
+                <div>
+                 With Love❤️ For all the Muslim Ummah
+                    <br />
+                   
+                </div>
+                <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div>
+                <div class="tw-flex tw-gap-4 tw-text-2xl">
+                    <a href="#" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                    >
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a
+                        href="#"
+                        class="tw-h-[40px] tw-w-[40px]"
+                        aria-label="Instagram"
+                    >
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Use cases</a>
+                    <a href="" class="footer-link">Integrations</a>
+                    <a href="" class="footer-link">Change logs</a>
+                    <a href="" class="footer-link">Blogs</a>
+                    <a href="" class="footer-link">Contact</a>
+                </div> -->
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Resources</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="About.html" class="footer-link">About us</a>
+                    <a href="contact.html" class="footer-link">Contact Us</a>
+                    <a href="Policy.html" class="footer-link">Privacy policy</a>
+                    <a href="terms.html" class="footer-link">Terms and Condition</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src=" index.js"></script>
+</html>
