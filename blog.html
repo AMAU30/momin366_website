@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html ⚡ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Design Trends | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- AMP Boilerplate -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- AMP Components -->
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <style amp-custom>
+        :root {
+            --primary: #4361ee;
+            --primary-light: #4895ef;
+            --secondary: #3f37c9;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --success: #4cc9f0;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.18);
+            --shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            --text-primary: #212529;
+            --text-secondary: #495057;
+        }
+
+        /* Dark mode variables */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #4895ef;
+                --primary-light: #4cc9f0;
+                --dark: #f8f9fa;
+                --light: #1a1a2e;
+                --card-bg: rgba(26, 26, 46, 0.85);
+                --glass-border: rgba(255, 255, 255, 0.05);
+                --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+                --text-primary: #f8f9fa;
+                --text-secondary: #adb5bd;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--light);
+            background-image: radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.1) 0%, rgba(255, 255, 255, 0) 90%);
+            overflow-x: hidden;
+            transition: background 0.3s ease;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            width: 100%;
+            height: 4px;
+            background: rgba(0, 0, 0, 0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+            width: 0%;
+            transition: width 0.1s ease;
+            border-radius: 0 2px 2px 0;
+        }
+
+        /* Header - Modern Glassmorphism */
+        header {
+            background: var(--card-bg);
+            color: var(--text-primary);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-weight: 500;
+            transition: color 0.2s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 2.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+                padding: 0 1.5rem;
+            }
+        }
+
+        /* Article Styles - Modern Card */
+        article {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--glass-border);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.2);
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .author-img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            margin-right: 12px;
+            object-fit: cover;
+            border: 2px solid var(--glass-border);
+        }
+
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .author-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.2rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1.2rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.8rem 0 1rem;
+            color: var(--text-primary);
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Framed Images - Modern Neumorphism */
+        .framed-image {
+            margin: 2.5rem 0;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 
+                8px 8px 16px rgba(0, 0, 0, 0.1),
+                -8px -8px 16px rgba(255, 255, 255, 0.5);
+            border: 12px solid var(--card-bg);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .framed-image:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                12px 12px 24px rgba(0, 0, 0, 0.15),
+                -12px -12px 24px rgba(255, 255, 255, 0.6);
+        }
+
+        .framed-image amp-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .framed-image:hover amp-img {
+            transform: scale(1.03);
+        }
+
+        /* Video Styles */
+        .video-container {
+            margin: 2.5rem 0;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: scale(1.01);
+        }
+
+        /* Sidebar - Modern Glass Card */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+
+        .sidebar-widget {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--glass-border);
+        }
+
+        .widget-title {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--glass-border);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .read-next {
+            display: block;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 12px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .read-next:hover {
+            background: rgba(67, 97, 238, 0.2);
+            border-color: var(--glass-border);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .read-next h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .read-next p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(67, 97, 238, 0.1);
+            border-radius: 50px;
+            color: var(--primary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--card-bg);
+            color: var(--text-secondary);
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--glass-border);
+            backdrop-filter: blur(8px);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 0 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            article {
+                padding: 1.8rem;
+            }
+
+            .framed-image {
+                border-width: 8px;
+            }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        article, .sidebar-widget {
+            animation: fadeIn 0.6s ease forwards;
+        }
+
+        .sidebar-widget:nth-child(1) { animation-delay: 0.1s; }
+        .sidebar-widget:nth-child(2) { animation-delay: 0.2s; }
+    </style>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-img">WD</div>
+                <span>WebDesign</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">Trends</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <article>
+                <div class="meta">
+                    <amp-img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80" 
+                             width="44" height="44" alt="Author" class="author-img" layout="fixed"></amp-img>
+                    <div class="author-info">
+                        <span class="author-name">Sarah Johnson</span>
+                        <span class="date">May 15, 2024 · 8 min read</span>
+                    </div>
+                </div>
+                
+                <h1>2024 Web Design Trends: What's Next for Digital Experiences</h1>
+                
+                <p>As we move deeper into 2024, web design continues to evolve at a rapid pace. This year, we're seeing a blend of technological innovation and a return to some fundamental design principles that prioritize user experience above all else.</p>
+                
+                <div class="framed-image">
+                    <amp-img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=600&q=80" 
+                             width="1000" height="600" alt="Web Design" layout="responsive"></amp-img>
+                </div>
+                
+                <h2>1. Advanced Micro-Interactions</h2>
+                <p>The subtle animations when hovering over buttons or scrolling through content have become more sophisticated. Designers are now creating micro-interactions that not only look beautiful but also provide meaningful feedback to users.</p>
+                
+                <h2>2. Glassmorphism 2.0</h2>
+                <p>The frosted glass effect has evolved with more dynamic blur effects and better performance optimization. When combined with vibrant gradients, it creates depth without overwhelming the user.</p>
+                
+                <div class="video-container">
+                    <amp-youtube width="1280" height="720"
+                        layout="responsive"
+                        data-videoid="viq2KOe08g0"
+                        data-param-rel="0">
+                    </amp-youtube>
+                </div>
+                <p class="caption">Video: 2024 Design Trends Explained (YouTube)</p>
+                
+                <h2>3. AI-Generated Design Elements</h2>
+                <p>With AI tools becoming more accessible, we're seeing a rise in personalized design elements that adapt to user preferences in real-time, creating truly unique experiences for each visitor.</p>
+                
+                <div class="framed-image">
+                    <amp-img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=600&q=80" 
+                             width="1000" height="600" alt="AI Design" layout="responsive"></amp-img>
+                </div>
+                
+                <h2>4. Scroll-Triggered Animations</h2>
+                <p>More websites are using scroll position to trigger complex animations that guide users through content in a cinematic way, making the browsing experience more engaging.</p>
+                
+                <h2>5. Sustainable Web Design</h2>
+                <p>With growing awareness of digital carbon footprints, designers are optimizing for performance and energy efficiency, often resulting in cleaner, more focused interfaces.</p>
+            </article>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Read Next</h3>
+                <a href="#" class="read-next">
+                    <h3>The Psychology of Color in 2024</h3>
+                    <p>How modern color palettes influence user behavior</p>
+                </a>
+                <a href="#" class="read-next">
+                    <h3>CSS Container Queries Masterclass</h3>
+                    <p>The future of responsive design is here</p>
+                </a>
+                <a href="#" class="read-next">
+                    <h3>Web3 UI Patterns</h3>
+                    <p>Designing for decentralized applications</p>
+                </a>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3 class="widget-title">Trending Tags</h3>
+                <div class="tags">
+                    <a href="#" class="tag">#Glassmorphism</a>
+                    <a href="#" class="tag">#MicroInteractions</a>
+                    <a href="#" class="tag">#AIDesign</a>
+                    <a href="#" class="tag">#Web3</a>
+                    <a href="#" class="tag">#SustainableUX</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Articles</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+            <p class="copyright">© 2024 WebDesign Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- AMP Analytics -->
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+            "vars": {
+                "account": "UA-XXXXX-Y"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }
+        </script>
+    </amp-analytics>
+    
+    <!-- JavaScript -->
+    <script>
+        // Progress Bar
+        window.addEventListener('scroll', function() {
+            const progressBar = document.getElementById('progressBar');
+            const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollProgress = (scrollTop / scrollHeight) * 100;
+            progressBar.style.width = scrollProgress + '%';
+        });
+
+        // Dark mode detection
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        const toggleDarkMode = (e) => {
+            const darkMode = e.matches;
+            document.documentElement.style.setProperty('--primary', darkMode ? '#4895ef' : '#4361ee');
+            document.documentElement.style.setProperty('--light', darkMode ? '#1a1a2e' : '#f8f9fa');
+            document.documentElement.style.setProperty('--dark', darkMode ? '#f8f9fa' : '#1a1a2e');
+        };
+        prefersDark.addListener(toggleDarkMode);
+        toggleDarkMode(prefersDark);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title>Momin366 - Spiritual Companion</title>
+    <link rel="canonical" href="https://Momin366.com">
+    
+    <!-- AMP Boilerplate -->
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    
+    <!-- AMP Components -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style amp-custom>
+        :root {
+            --primary: #6C4DF6;
+            --primary-light: #8A6DF7;
+            --primary-dark: #5538D1;
+            --secondary: #FF7D5E;
+            --accent: #00D1C1;
+            --dark: #1A1B3E;
+            --light: #F8FAFF;
+            --text-primary: #1E293B;
+            --text-secondary: #64748B;
+            --white: #FFFFFF;
+            --black: #000000;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-light));
+            --gradient-accent: linear-gradient(135deg, var(--accent), var(--secondary));
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text-primary);
+            background-color: var(--light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* Header - Modern Sticky Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 0;
+            background-color: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 100;
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .nav-toggle {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .nav-toggle:hover {
+            background-color: rgba(108, 77, 246, 0.1);
+        }
+        
+        .nav-menu {
+            position: fixed;
+            top: 72px;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            padding: 24px;
+            box-shadow: var(--shadow-md);
+            transform: translateY(-150%);
+            transition: var(--transition);
+            z-index: 99;
+            border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+        }
+        
+        .nav-menu.active {
+            transform: translateY(0);
+        }
+        
+        .nav-list {
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-bottom: 16px;
+        }
+        
+        .nav-link {
+            font-weight: 600;
+            padding: 12px 16px;
+            display: block;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            background-color: rgba(108, 77, 246, 0.1);
+            color: var(--primary);
+        }
+        
+        /* Hero Section - Modern Design */
+        .hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(108, 77, 246, 0.05) 0%, rgba(0, 209, 193, 0.03) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(108, 77, 246, 0.08) 0%, rgba(0,0,0,0) 70%);
+            transform: rotate(30deg);
+            z-index: 0;
+        }
+        
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        @media (min-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-headline {
+            font-size: 2.75rem;
+            margin-bottom: 24px;
+              background: linear-gradient(90deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
+        
+        .hero-subheadline {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+        }
+        
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(108, 77, 246, 0.2);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(108, 77, 246, 0.05);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .hero-image-container {
+            position: relative;
+            margin: 0 auto;
+            width: 215px;
+            height: 215px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 8px solid white;
+            background: var(--white);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* Features Section - Modern Cards with Gradient */
+        .section {
+            padding: 96px 0;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            display: inline-block;
+            color: var(--text-primary);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+        
+        @media (min-width: 640px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .feature-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            border: 1px solid rgba(108, 77, 246, 0.1);
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(108, 77, 246, 0.03) 0%, rgba(0, 209, 193, 0.02) 100%);
+            z-index: -1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: var(--white);
+            font-size: 1.75rem;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+        
+        .feature-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        /* App Showcase Section - Replacing Explore Momin366 */
+        .com-showcase {
+            background: linear-gradient(135deg, rgba(108, 77, 246, 0.05) 0%, rgba(0, 209, 193, 0.05) 100%);
+            padding: 96px 0;
+            overflow: hidden;
+        }
+        
+        .showcase-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) {
+            .showcase-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .showcase-image {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .showcase-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .showcase-title {
+            font-size: 2.25rem;
+            margin-bottom: 24px;
+            color: var(--primary-dark);
+            line-height: 1.2;
+        }
+        
+        .showcase-text {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+        
+        /* Testimonials - Modern Auto-Scrolling Carousel */
+        .testimonials {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 96px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.03)" d="M0,0 L100,0 L100,100 L0,100 Z"></path></svg>');
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .testimonials .section-title {
+            color: var(--white);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonials .section-title::after {
+            background: var(--accent);
+        }
+        
+        amp-carousel.testimonial-carousel {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        .testimonial-slide {
+            padding: 0 16px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .testimonial-text {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+            position: relative;
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            color: rgba(255, 255, 255, 0.1);
+            font-family: serif;
+            line-height: 1;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+        }
+        
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            margin-right: 16px;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+        
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .author-name {
+            font-weight: 700;
+            color: var(--white);
+            margin-bottom: 4px;
+        }
+        
+        .author-role {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* FAQ - Modern Accordion */
+        .faq-accordion section {
+            background: linear-gradient(145deg, #ffffff, #f3f4f6);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .faq-accordion section:hover {
+            transform: translateY(-2px);
+        }
+        .faq-accordion h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-accordion div {
+            padding: 0 1.5rem 1.5rem;
+            color: #4b5563;
+            font-size: 1rem;
+            line-height: 1.6;
+            display: none;
+        }
+        .faq-accordion section[expanded] div {
+            display: block;
+        }
+        .faq-accordion .icon {
+            font-size: 1.5rem;
+            color: #3b82f6;
+            transition: transform 0.3s ease;
+        }
+        .faq-accordion section[expanded] .icon::before {
+            content: '−';
+        }
+        .faq-accordion .icon::before {
+            content: '+';
+            padding: 14px 32px;
+        }
+        
+        /* Advice Section */
+        .advice-section {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .advice-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 L0,100 Z"></path></svg>');
+            opacity: 0.1;
+        }
+        
+        .advice-content {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .advice-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .advice-text {
+            margin-bottom: 32px;
+            opacity: 0.9;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+        
+        .email-link {
+            display: inline-flex;
+            align-items: center;
+            background: var(--white);
+            color: var(--primary-dark);
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            font-size: 1.125rem;
+        }
+        
+        .email-link:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .email-icon {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* Footer - Modern Design */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 96px 0 32px;
+            position: relative;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+        
+        @media (min-width: 768px) {
+            .footer-container {
+                grid-template-columns: 1.5fr repeat(3, 1fr);
+            }
+        }
+        
+        .footer-about {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(90deg, var(--white), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        
+        .footer-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 24px;
+            border: 8px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .footer-about-text {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 24px;
+            line-height: 1.6;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+        
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+        
+        .social-icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .footer-links h3 {
+            font-size: 1.25rem;
+            margin-bottom: 24px;
+            position: relative;
+            display: inline-block;
+            color: var(--white);
+        }
+        
+        .footer-links h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
+            display: inline-block;
+            padding: 4px 0;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 48px;
+            margin-top: 48px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .love-muslim {
+            display: inline-block;
+            margin-top: 16px;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Responsive Adjustments */
+        @media (min-width: 768px) {
+            .hero-headline {
+                font-size: 3.5rem;
+            }
+            
+            .hero-subheadline {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.75rem;
+            }
+            
+            .nav-toggle {
+                display: none;
+            }
+            
+            .nav-menu {
+                position: static;
+                transform: none;
+                padding: 0;
+                box-shadow: none;
+                background: none;
+                display: block;
+            }
+            
+            .nav-list {
+                display: flex;
+                gap: 24px;
+            }
+            
+            .nav-item {
+                margin-bottom: 0;
+            }
+            
+            .nav-link {
+                padding: 8px 45px;
+            }
+            
+            .testimonial-carousel {
+                padding: 0 40px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .hero {
+                padding: 120px 0 60px;
+            }
+            
+            .section {
+                padding: 64px 0;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .footer-about {
+                text-align: center;
+                align-items: center;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .footer-links {
+                text-align: center;
+            }
+            
+            .footer-links h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* AMP-specific optimizations */
+        amp-img {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Momin366</a>
+            <button class="nav-toggle" on="tap:nav-menu.toggleClass(class='active')">
+                ☰
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#app-showcase" class="nav-link">App</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                      <!-- <li class="nav-item"><a href="/blog.html" class="nav-link">Namaz</a></li>
+                       <li class="nav-item"><a href="#faq" class="nav-link">Wazu</a></li>
+                      <li class="nav-item"><a href="#faq" class="nav-link">Ghusl</a></li>
+                       <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Designed For you.<br>♥ Momin366</h1>
+                <p class="hero-subheadline">
+                    Your spiritual companion designed to elevate your daily connection with faith through beautiful design and intuitive features.
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.microzone.momin366_V3&hl=en_US" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 20 20" fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>google_play [#133]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-101.000000, -7599.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M45,7458.928 L45,7459 L53.5,7454 L56.5956547,7452.185 L54.1323291,7449.705 L45,7458.928 Z M57.4515643,7446.334 L54.8020857,7449 L57.4515643,7451.667 L62,7449 L57.4515643,7446.334 Z M56.5670915,7445.816 L53.5,7444 L45,7439 L45,7439.072 L54.1323291,7448.296 L56.5670915,7445.816 Z M53.469467,7448.967 L45,7457.517 L45,7449 L45,7440.423 L53.469467,7448.967 Z" id="google_play-[#133]"> </path> </g> </g> </g> </g></svg>
+                        Get on Google Play
+                    </a>
+                    <a href="https://apps.apple.com/in/app/momin366/id6743346231" class="btn btn-secondary">
+                        <svg class="btn-icon" fill="#6C4DF6" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m1380.664 0 5.547 52.865c13.923 131.766-31.47 278.7-121.238 393.146-1.359 1.585-2.944 2.717-4.189 4.302 14.943-.566 29.885-1.698 45.394-.226 67.694 2.83 245.646 28.64 362.016 202.176l31.583 47.205-47.318 31.47c-40.752 25.81-165.839 118.748-164.141 293.077 1.924 220.742 179.876 301.68 200.14 310.17l48.562 20.377-16.3 50.26c-13.472 43.47-52.3 154.746-128.144 267.947-72.335 107.768-162.217 242.024-314.246 244.854-71.769 1.811-117.615-19.81-159.613-38.262-39.96-17.66-74.26-32.828-131.086-32.828-60.11 0-96.448 15.735-138.558 34.073-39.507 17.207-84.335 36.677-146.482 39.28-2.83.114-5.66.114-8.264.114-147.274 0-249.608-150.897-317.755-251.306l-5.187-7.735c-170.414-256.903-265.7-675.19-108.466-953.793 86.598-153.614 244.174-250.627 411.258-253.117 65.09-.906 124.974 19.47 176.594 39.846 8.83-119.88 65.883-231.722 125.087-303.944C1061.89 84.448 1206.448 7.245 1327.573 2.264L1380.664 0Zm-82.75 562.948c-73.694-7.81-144.331 21.282-207.157 46.639-47.432 19.13-88.297 35.545-126.22 35.545-32.375 0-66.335-10.98-101.654-24.791l-5.433-.453-.227-1.698c-7.471-3.056-14.942-6-22.64-9.056C785 588.984 730.55 562.608 676.102 567.25c-127.125 1.924-247.684 76.863-314.586 195.61-144.897 256.627-23.658 647.057 108.787 842.215 70.41 103.805 145.123 206.365 227.76 201.724 40.978-1.698 69.505-14.15 105.843-29.885 46.865-20.49 100.07-43.582 183.725-43.582 80.712 0 131.765 22.527 176.82 42.45 37.242 16.527 68.146 30.451 111.729 28.64 86.372-1.585 146.708-81.731 222.326-194.706 49.582-73.92 81.278-146.708 99.277-195.271-76.637-45.96-220.628-162.443-222.666-389.411-1.698-180.103 97.24-294.662 165.613-352.168-85.353-92.598-195.385-107.88-242.816-109.918Zm-23.093-438.314c-76.524 20.49-158.707 72.449-211.233 136.86l-.113.113c-46.525 56.827-95.994 150.784-101.088 247.457 84.674-12.678 165.273-71.769 213.61-133.01 58.411-74.374 93.39-164.821 98.824-251.42Z" fill-rule="evenodd"></path> </g></svg>
+                        Download on App Store
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <amp-img src="assets/2.png" alt="Momin366 App" width="215" height="215" layout="responsive" class="hero-image"></amp-img>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Benefits</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                            <path d="M12 8V12L15 15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Daily Goal</h3>
+                    <p class="feature-text">Set and track your daily spiritual goals with intuitive progress tracking and motivational reminders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Namaz & Zikir</h3>
+                    <p class="feature-text">Comprehensive prayer tracking with customizable reminders and a rich library of zikir and duas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"></path>
+                            <path d="M12 6V12L16 14"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Namaz Time</h3>
+                    <p class="feature-text">Accurate prayer times based on your location with customizable calculation methods.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"></path>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"></path>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"></path>
+                            <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Quran Community</h3>
+                    <p class="feature-text">Connect with a supportive community for Quran study groups, discussions, and spiritual growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Showcase Section -->
+    <section id="app-showcase" class="app-showcase">
+        <div class="container showcase-container">
+            <amp-img src="assets/3.webp" alt="Momin366 App Screenshot" width="600" height="1200" layout="responsive" class="showcase-image"></amp-img>
+            <div class="showcase-content">
+                <h2 class="showcase-title">Download Momin366 Today</h2>
+                <p class="showcase-text">Transform your spiritual journey with our beautifully designed app. Available now on both major platforms.</p>
+                <div class="cta-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.microzone.momin366_V3&hl=en_US" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 20 20" fill="#ffffff" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>google_play [#133]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-101.000000, -7599.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M45,7458.928 L45,7459 L53.5,7454 L56.5956547,7452.185 L54.1323291,7449.705 L45,7458.928 Z M57.4515643,7446.334 L54.8020857,7449 L57.4515643,7451.667 L62,7449 L57.4515643,7446.334 Z M56.5670915,7445.816 L53.5,7444 L45,7439 L45,7439.072 L54.1323291,7448.296 L56.5670915,7445.816 Z M53.469467,7448.967 L45,7457.517 L45,7449 L45,7440.423 L53.469467,7448.967 Z" id="google_play-[#133]"> </path> </g> </g> </g> </g></svg>
+                        Get on Google Play
+                    </a>
+                    <a href="https://apps.apple.com/in/app/momin366/id6743346231" class="btn btn-secondary">
+                        <svg class="btn-icon" fill="#6C4DF6" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m1380.664 0 5.547 52.865c13.923 131.766-31.47 278.7-121.238 393.146-1.359 1.585-2.944 2.717-4.189 4.302 14.943-.566 29.885-1.698 45.394-.226 67.694 2.83 245.646 28.64 362.016 202.176l31.583 47.205-47.318 31.47c-40.752 25.81-165.839 118.748-164.141 293.077 1.924 220.742 179.876 301.68 200.14 310.17l48.562 20.377-16.3 50.26c-13.472 43.47-52.3 154.746-128.144 267.947-72.335 107.768-162.217 242.024-314.246 244.854-71.769 1.811-117.615-19.81-159.613-38.262-39.96-17.66-74.26-32.828-131.086-32.828-60.11 0-96.448 15.735-138.558 34.073-39.507 17.207-84.335 36.677-146.482 39.28-2.83.114-5.66.114-8.264.114-147.274 0-249.608-150.897-317.755-251.306l-5.187-7.735c-170.414-256.903-265.7-675.19-108.466-953.793 86.598-153.614 244.174-250.627 411.258-253.117 65.09-.906 124.974 19.47 176.594 39.846 8.83-119.88 65.883-231.722 125.087-303.944C1061.89 84.448 1206.448 7.245 1327.573 2.264L1380.664 0Zm-82.75 562.948c-73.694-7.81-144.331 21.282-207.157 46.639-47.432 19.13-88.297 35.545-126.22 35.545-32.375 0-66.335-10.98-101.654-24.791l-5.433-.453-.227-1.698c-7.471-3.056-14.942-6-22.64-9.056C785 588.984 730.55 562.608 676.102 567.25c-127.125 1.924-247.684 76.863-314.586 195.61-144.897 256.627-23.658 647.057 108.787 842.215 70.41 103.805 145.123 206.365 227.76 201.724 40.978-1.698 69.505-14.15 105.843-29.885 46.865-20.49 100.07-43.582 183.725-43.582 80.712 0 131.765 22.527 176.82 42.45 37.242 16.527 68.146 30.451 111.729 28.64 86.372-1.585 146.708-81.731 222.326-194.706 49.582-73.92 81.278-146.708 99.277-195.271-76.637-45.96-220.628-162.443-222.666-389.411-1.698-180.103 97.24-294.662 165.613-352.168-85.353-92.598-195.385-107.88-242.816-109.918Zm-23.093-438.314c-76.524 20.49-158.707 72.449-211.233 136.86l-.113.113c-46.525 56.827-95.994 150.784-101.088 247.457 84.674-12.678 165.273-71.769 213.61-133.01 58.411-74.374 93.39-164.821 98.824-251.42Z" fill-rule="evenodd"></path> </g></svg>
+                        Download on App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            
+            <amp-carousel class="testimonial-carousel" type="carousel" controls autoplay delay="5000">
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Momin366 has transformed my prayer routine. The reminders and tracking keep me consistent like never before. The design is so beautiful it makes me want to open the app daily.</p>
+                        <div class="testimonial-author">
+                            <amp-img src="https://randomuser.me/api/portraits/men/32.jpg" width="48" height="48" layout="responsive" alt="Ahmed K." class="author-avatar"></amp-img>
+                            <div class="author-info">
+                                <div class="author-name">Ahmed K.</div>
+                                <div class="author-role">Entrepreneur, Dubai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The Quran community feature helped me find study partners and deepen my understanding of the Quran. I've made lifelong friends through this platform.</p>
+                        <div class="testimonial-author">
+                            <amp-img src="https://randomuser.me/api/portraits/women/44.jpg" width="48" height="48" layout="responsive" alt="Fatima S." class="author-avatar"></amp-img>
+                            <div class="author-info">
+                                <div class="author-name">Fatima S.</div>
+                                <div class="author-role">Teacher, London</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">As a revert, Momin366 has been invaluable in helping me learn and maintain my prayer schedule. The learning resources are comprehensive yet easy to understand.</p>
+                        <div class="testimonial-author">
+                            <amp-img src="https://randomuser.me/api/portraits/men/22.jpg" width="48" height="48" layout="responsive" alt="Michael T." class="author-avatar"></amp-img>
+                            <div class="author-info">
+                                <div class="author-name">Michael T.</div>
+                                <div class="author-role">Software Developer, New York</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The interface is beautiful and intuitive. It makes tracking my spiritual journey a pleasure rather than a chore. I look forward to checking my progress each day.</p>
+                        <div class="testimonial-author">
+                            <amp-img src="https://randomuser.me/api/portraits/women/63.jpg" width="48" height="48" layout="responsive" alt="Aisha M." class="author-avatar"></amp-img>
+                            <div class="author-info">
+                                <div class="author-name">Aisha M.</div>
+                                <div class="author-role">Doctor, Kuala Lumpur</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </amp-carousel>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+ <section id="faq" class="faq py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="section-title text-3xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
+            <amp-accordion class="faq-accordion">
+                <section expanded>
+                    <h3>Is Momin366 available for both iOS and Android?<span class="icon"></span></h3>
+                    <div>Yes, Momin366 is available on both the Apple App Store and Google Play Store. You can download it on any smartphone.</div>
+                </section>
+                <section>
+                    <h3>Does Momin366 require an internet connection?<span class="icon"></span></h3>
+                    <div>Momin366 works offline for most features like prayer tracking and Quran reading. Some features like community discussions require an internet connection.</div>
+                </section>
+                <section>
+                    <h3>How accurate are the prayer times?<span class="icon"></span></h3>
+                    <div>We use reliable calculation methods and allow you to choose from several recognized calculation methods for maximum accuracy.</div>
+                </section>
+                <section>
+                    <h3>Is there a premium version of Momin366?<span class="icon"></span></h3>
+                    <div>Momin366 is free to use with all essential features. We offer a premium subscription for advanced analytics and additional content.</div>
+                </section>
+            </amp-accordion>
+        </div>
+    </section>
+
+    <!-- Advice Section -->
+    <section class="advice-section">
+        <div class="container">
+            <div class="advice-content">
+                <h2 class="advice-title">Need Advice or Have Suggestions?</h2>
+                <p class="advice-text">We're always looking to improve Momin366. Share your thoughts and feature requests with us!</p>
+                <a href="mailto:momin366official@gmail.com" class="email-link">
+                    <svg class="email-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                   momin366official@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Momin366</div>
+                    <amp-img src="assets/2.png" alt="Momin366 App" width="200" height="200" layout="responsive" class="footer-img"></amp-img>
+                    <p class="footer-about-text">Your spiritual companion for daily connection, growth, and community.</p>
+                     
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div> <br/>
+                     <p>© 2025 Momin366. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Privacy</h3>
+                    <ul>
+                        <li><a href="Policy.html">Privacy Policy</a></li>
+                       <li><a href="GDPR.html">GDPR</a></li>
+                        <!-- <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li> -->
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>T&C</h3>
+                    <ul>
+                        <li><a href="Terms.html">Terms of Service</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                       
+                    </ul>
+                    
+                </div>
+               
+            </div>
+            <div class="footer-bottom">
+                <p class="love-muslim">Made with ❤️ for the Muslim Ummah</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
